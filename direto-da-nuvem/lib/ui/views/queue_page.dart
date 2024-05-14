@@ -355,15 +355,15 @@ class _QueueEditPageState extends State<QueueEditPage> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: Text("Deletar"),
+                              title: Text("Deletar Fila"),
                               content: Text(
                                   "Tem certeza que deseja deletar essa fila? Filas deletedas não podem ser recuperadas"),
                               actions: [
                                 ElevatedButton(
                                     onPressed: () {
-                                      delete(); // firestore_helper.dart
+                                      deleteData_deleteDocs(); // firestore_helper.dart
                                     },
-                                    child: Text("Deletar"))
+                                    child: Text("Deletar Fila"))
                               ],
                             );
                           });

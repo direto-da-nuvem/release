@@ -85,7 +85,7 @@ class LoginController extends GetxController {
     }
     debugPrint('userCredential: $userCredential');
     debugPrint('auth: $auth');
-    debugPrint('email: ${userCredential!.user!.email}');
+    //debugPrint('email: ${userCredential!.user!.email}');//
 
     update();
   }
